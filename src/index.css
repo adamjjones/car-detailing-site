@@ -13,18 +13,40 @@ body {
 }
 
 .logo {
-  width: 100px;
+  /* margin-left: ; */
+  width: 150px;
   height: 100px;
 }
 
 .navbar {
   display: flex;
   justify-content: space-around;
-  /* padding: 10px; */
+  background-color: rgb(93, 140, 241);
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  font-size: 3rem;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .greeting {
-  font-size: 2rem;
-  margin-bottom: 50px;
-  text-align: justify;
+  width: 100%;
+  margin-right: 2rem;
+  text-align: center;
+}
+
+@media(min-width: 300px) and (max-width: 500px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .logo {
+    width: 100vw;
+    height: 40vh;
+    /* height: 15rem; */
+  }
 }

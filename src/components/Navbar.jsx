@@ -4,7 +4,7 @@ import Main from '../img/Main-logo.png'
 const Navbar = () => {
   return (
     <div>
-      <div>
+      <div className="banner">
         <img class="logo" src={Main} alt="" />
         <span className="greeting">So Fresh Hand Car Wash</span>
       </div>
